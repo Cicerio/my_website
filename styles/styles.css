@@ -1,0 +1,62 @@
+:root{
+    /* color scheme */
+    --priColor: #007f5f;
+    --secColor: #2b9348;
+    --accColor: #FFC300;
+    --neuColor: #F5F5F5;
+    --darkBack: darkgrey; 
+    background-color: var(--neuColor);
+    /* image dimensions */
+    --imgheight: 500px;
+    --imgwidth:  var(--imgheight)*1.3;
+}
+
+p{
+    color:var(--secColor);
+}
+/* styles for the header */
+header h1{
+    color:var(--priColor);
+}
+header p{
+    color:var(--secColor);
+}
+/* styles for the main */
+main img{
+    aspect-ratio: auto 133/100;
+    width: var(--imgwidth);
+    height: var(--imgheight);
+}
+/* styles for the footer */
+
+/* Color schemes:
+Earthy Tones:
+    Primary Color: #8B5A2B (Brown)
+    Secondary Color: #A0522D (Dark Orange)
+    Accent Color: #3CB371 (Medium Sea Green)
+    Neutral Color: #F5F5F5 (White Smoke)
+Oceanic Blue:
+    Primary Color: #0077be (Ocean Blue)
+    Secondary Color: #50B2E6 (Sky Blue)
+    Accent Color: #4d4dff (Royal Blue)
+    Neutral Color: #FFFFFF (White)
+Sunrise Orange:
+    --priColor: #FDB813;
+    --secColor: #FDD13E;
+    --accColor: #3B3B3B;
+    --neuColor: #FFFFFF;
+    Primary Color: #FDB813 (Sunrise Orange)
+    Secondary Color: #FDD13E (Gold)
+    Accent Color: #3B3B3B (Black)
+    Neutral Color: #FFFFFF (White)
+Forest Green:
+    Primary Color: #007f5f (Forest Green)
+    Secondary Color: #2b9348 (Green)
+    Accent Color: #FFC300 (Yellow)
+    Neutral Color: #F5F5F5 (White Smoke)
+Lavender Purple:
+    Primary Color: #6B5B95 (Lavender Purple)
+    Secondary Color: #9B9EAA (Gray)
+    Accent Color: #E53935 (Red)
+    Neutral Color: #FFFFFF (White)
+    */
