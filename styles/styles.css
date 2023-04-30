@@ -3,16 +3,26 @@
     --priColor: #007f5f;
     --secColor: #2b9348;
     --accColor: #FFC300;
-    --neuColor: #F5F5F5;
-    --darkBack: darkgrey; 
-    background-color: var(--neuColor);
+    --neuColor: ##FCF5E5;
+   
     /* image dimensions */
-    --imgheight: 500px;
-    --imgwidth:  var(--imgheight)*1.3;
+    --imgheight: 20em;
+    --imgwidth:  var(--imgheight)*1.3
 }
-
-p{
+body{
+    
     color:var(--secColor);
+    background-color: var(--neuColor);
+}
+p.desc{
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #6B5B95;
+    font-style: bold;
 }
 /* styles for the header */
 header h1{
@@ -23,7 +33,9 @@ header p{
 }
 /* styles for the main */
 main img{
-    aspect-ratio: auto 133/100;
+    border: .5em;
+    border-style:solid;
+    border-color: var(--accColor);
     width: var(--imgwidth);
     height: var(--imgheight);
 }
