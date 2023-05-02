@@ -1,44 +1,112 @@
-:root{
+:root {
     /* color scheme */
     --priColor: #007f5f;
     --secColor: #2b9348;
-    --accColor: #FFC300;
-    --neuColor: ##FCF5E5;
-   
+    --accColor: #ffc300;
+    --neuColor: #FCF5E5;
+
     /* image dimensions */
     --imgheight: 20em;
-    --imgwidth:  var(--imgheight)*1.3
+    --imgwidth: var(--imgheight);
+
+    /* background */
+    height: 120%;
+    /* background-image: linear-gradient(to top, var(--secColor) 0%, var(--priColor) 50%, var(--secColor) 100%); */
+    background-image: url("../images/Pool-Water-Texture.jpg");
 }
-body{
-    
-    color:var(--secColor);
+
+body {
+    color: var(--secColor);
     background-color: var(--neuColor);
+    padding: 20px 20px;
+    width:80%;
+    
+    margin: 100px 150px;
+    border: 10px solid var(--accColor);
+    border-radius: 30px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-y: auto;
 }
-p.desc{
-    font-style: italic;
+/* styles for the header */
+header {
+    width: 80%;
+    height: auto;
+    color: var(--secColor);
+    background-color: var(--neuColor);
+    padding: 10px 50px;
+    margin: auto;
+    border: 20px double var(--accColor);
+    border-radius: 30px;
+
 }
-a{
+nav {
+    text-align: left;
+}
+
+a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: #6B5B95;
     font-style: bold;
 }
-/* styles for the header */
-header h1{
-    color:var(--priColor);
+header h1 {
+    color: var(--priColor);
 }
-header p{
-    color:var(--secColor);
+
+
+p.desc {
+    font-style: italic;
 }
+
 /* styles for the main */
-main img{
-    border: .5em;
-    border-style:solid;
-    border-color: var(--accColor);
-    width: var(--imgwidth);
-    height: var(--imgheight);
+main img, .gallery img {
+    width:90%;
+
+    border: 5px dashed #50B2E6;
+    border-radius: 50px;
+    padding: auto;
+    margin: 10px 10px;
+
+    object-fit:contain;
+    object-position: center;
 }
+main img{
+    width: 46%;
+    object-position: center;
+}
+div, section.gallery{
+    width: 80%;
+    background: #0077be;
+    /* background-image: url("../images/Pool-Water-Texture.jpg"); */
+    color: var(--secColor);
+    padding:auto;
+    margin: auto;
+    border: 10px solid var(--accColor);
+    border-radius: 20px;
+    overflow: hidden
+}
+div.galLeft{
+  width:40%;
+  float:left; 
+} 
+div.galRight{
+    width:40%;
+    float:right; 
+  } 
+section{
+    width: 90%;
+    height: 100%;
+    padding:50px 50px;
+    margin: auto;
+    border: 10px solid var(--accColor);
+    border-radius: 20px;
+    text-align: center;
+    object-position: center;
+}
+
 /* styles for the footer */
 
 /* Color schemes:
