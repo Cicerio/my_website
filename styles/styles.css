@@ -8,21 +8,6 @@
     /* background-image: url("../images/Pool-Water-Texture.jpg"); */
     
 }
-@media only screen and (max-width:475px){
-    #mobile_menu{ display:block;}
-    #nav_menu{display: none;}
-}
-@media screen and (width > 475px) {
-    #mobile_menu{ display:none;}
-    #nav_menu{display: block;}
-}
-@media screen and (width < 802px){
-    :root{
-        height:230%;
-    }
-    section.gallery img{ width: 90%; max-width: 100%; 
-        border: 10px inset var(--accColor);}
-}
 body {
     font-size: 100%;
     color: var(--secColor);

@@ -8,6 +8,15 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/queries.css">
+     <!-- Link for SlickNav Plugin -->
+     <link rel="stylesheet" href="styles/slicknav.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="js/jquery.slicknav.min.js"></script>
+     <script type="text/javascript"> $(document).ready(function () {
+             $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+         }); 
+     </script>
     <title>About - Ralph's Photography Database</title>
     <!-- 
         May contain more than photography, but right now just photos
@@ -17,17 +26,18 @@
 
 <body>
     <header>
-        <h1>Ralph's Photography Database - About</h1>
-        <!-- Navigation page, will contain more as pages are built -->
-        <nav id="nav_menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="search.html">Search</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <h1>About - Ralph's Photography Database</h1>
     </header>
+     <!-- Navigation page, will contain more as pages are built -->
+     <nav id="mobile_menu"></nav> 
+     <nav id="nav_menu">
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="gallery.html">Gallery</a></li>
+             <li><a href="search.html">Search</a></li>
+             <li><a href="about.html">About</a></li>
+         </ul>
+     </nav>
     <main>
         <article class="about">Welcome to my personal photography website! My name is Ralph, and I'm a Belfair-based photographer
             with a passion for capturing the beauty of the world around us. <br><br>

@@ -1,0 +1,10 @@
+main img{
+    overflow: contain;
+    max-width: 100%;
+    width: 100%;
+}
+@media only screen and (width <700px) {
+    header h1{
+      font-size: 5vw;
+    }   
+}
