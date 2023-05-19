@@ -38,15 +38,10 @@ header {
     height: auto;
     color: var(--secColor);
     background-color: var(--neuColor);
-    /* padding: 10px 3.90625%;  */
-    /* padding: 10px 50%; */
     margin: auto;
-    /* border: 5px solid var(--accColor); */
     text-align: center;
 
     display: block;
-    /* justify-content:center;
-    align-items:center */
 }
 
 header h1 {
@@ -84,7 +79,6 @@ header h2 {
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    /* width: 125px; */
     width: 100%;
     padding: 1em 0;
     text-decoration: none;
@@ -225,9 +219,6 @@ footer {
     section.gallery {
         grid-template: repeat(6, 1fr) / repeat(1, 1fr);
     }
-
-    /* styles specific to the about page */
-
 }
 
 /* Color schemes:
