@@ -1,0 +1,35 @@
+/* styles for the main */
+main{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+main h2{
+    text-align: center;
+}
+.homeGallery{
+    grid-area: sect;
+    display:grid;
+    justify-content:center;
+    align-items: center;
+    grid-template: repeat(2, 50%) / repeat(2, 50%);
+    grid-gap: 5px;
+  }
+  .homeGallery a{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+  }
+  .homeGallery img {
+    max-width: 100%;
+    max-height:100%;
+    padding: 0;
+    /* margin: 10px 10px; */
+    /* margin: 5px; */
+    border-radius: 0;
+    object-fit: contain;
+    object-position: right;
+  }

@@ -6,19 +6,25 @@
     --neuColor: #FCF5E5;
     background-image: linear-gradient(to top, #FCF5E5 0%, var(--secColor) 100%);
     /* background-image: url("../images/Pool-Water-Texture.jpg"); */
-    
+
 }
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     font-size: 100%;
     color: var(--secColor);
     background-color: var(--neuColor);
-    
+
     width: 80%;
     max-width: 1280px;
-    
+
     /* width: 1280px; */
-    margin: 50px 7.8125%;  /* margin: 100px 100px; */
-    padding: 20px 1.5625%; /* padding: 20px 20px;  */
+    margin: 50px 7.8125%;
+    /* margin: 100px 100px; */
+    padding: 20px 1.5625%;
+    /* padding: 20px 20px;  */
     border: 10px solid var(--accColor);
     /* border-radius: 30px; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -28,51 +34,58 @@ body {
 /* styles for the header */
 header {
     font-size: 1em;
-    width: 90%;
+    width: 100%;
     height: auto;
     color: var(--secColor);
     background-color: var(--neuColor);
-    padding: 10px 3.90625%; 
+    /* padding: 10px 3.90625%;  */
     /* padding: 10px 50%; */
     margin: auto;
-    border: 10px double var(--accColor);
+    /* border: 5px solid var(--accColor); */
     text-align: center;
 
-    display:block;
+    display: block;
     /* justify-content:center;
     align-items:center */
 }
+
 header h1 {
     color: var(--priColor);
+    font-style: italic;
 }
 
 p.desc {
     font-style: italic;
     clear: both;
 }
-header h2{
+
+header h2 {
     font-style: italic;
     clear: both;
 }
+
 /* styles for the nav menu */
-#nav_menu{
-    width: 100%;
-}
 #nav_menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    height: 50px;
     list-style-type: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 #nav_menu ul li {
-    float: left;
-    width: 25%;
+    flex-basis: 25%;
 }
 
 #nav_menu ul li a {
     text-align: center;
     display: block;
     /* width: 125px; */
+    width: 100%;
     padding: 1em 0;
     text-decoration: none;
     background-color: var(--priColor);
@@ -90,28 +103,62 @@ header h2{
     color: yellow;
 }
 
-/* styles for the section */ 
-section.gallery {
-    width: 90%;
-    /* background: #0077be; */
-    /* background-image: url("../images/Pool-Water-Texture.jpg"); */
-    color: var(--secColor);
-    padding:0; 
-    margin: 0 auto;
-    /* border-radius: 20px; */
-    overflow: hidden;
+/* styles for the main */
+main h2 {
+    font-style: italic;
 }
-section.gallery img{
-    border: 2px inset var(--accColor);
+
+/* styles for the main */
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+main h2 {
+    text-align: center;
+}
+
+/* styles for the homepage gallery */
+.homeGallery {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template: repeat(2, 50%) / repeat(2, 50%);
+    grid-gap: 5px;
+}
+
+.homeGallery a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+}
+
+.homeGallery img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: right;
+}
+
+/* styles for the section */
+section.gallery {
+    width: 100%;
+    color: var(--secColor);
+    padding: 0;
+    margin: 0 auto;
+    background-color: var(--accColor);
 }
 
 section {
     width: 90%;
     height: 100%;
-    /* padding: 50px 50px; */
     margin: 0;
-    /* border: 10px solid var(--accColor); */
-    /* border-radius: 20px; */
     text-align: center;
     object-position: center;
 }
@@ -123,6 +170,64 @@ footer {
 
     padding: 10px;
     border-top: 2px solid var(--accColor);
+}
+
+@media only screen and (width <=475px) {
+    #mobile_menu {
+        display: block;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main h2 {
+        text-align: left !important;
+        font-size: 18px;
+    }
+}
+
+@media screen and (width > 475px) {
+    #mobile_menu {
+        display: none;
+    }
+
+    #nav_menu {
+        display: block;
+    }
+}
+
+@media screen and (width < 802px) {
+    :root {
+        height: 350%;
+    }
+
+    /* styles specific to the homepage */
+    section.homeGallery {
+        grid-template: repeat(4, 25%) / 100%;
+    }
+
+    section.homeGallery a {
+        width: 100%;
+    }
+
+    section.homeGallery img {
+        width: 100%;
+        max-width: 100%;
+        border: 0px inset var(--accColor);
+    }
+
+    /* styles specific to the gallery page */
+    section.gallery {
+        grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+    }
+
+    /* styles specific to the about page */
+
 }
 
 /* Color schemes:
