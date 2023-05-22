@@ -1,10 +1,16 @@
 :root {
     /* color scheme */
-    --priColor: #007f5f;
+    /* --priColor: #007f5f;
     --secColor: #2b9348;
     --accColor: #ffc300;
-    --neuColor: #FCF5E5;
-    background-image: linear-gradient(to top, #FCF5E5 0%, var(--secColor) 100%);
+    --neuColor: #FCF5E5; */
+
+    --priColor: #726EFF;
+    --secColor: #5AFFE7;
+    --accColor: #08C6AB;
+    --neuColor: #212B38;
+    --bacColor: #37465b;
+    background-image: linear-gradient(to top, var(--priColor) 0%, var(--bacColor) 100% );
     /* background-image: url("../images/Pool-Water-Texture.jpg"); */
 
 }
@@ -23,7 +29,7 @@ body {
     /* width: 1280px; */
     margin: 50px 7.8125%;
     /* margin: 100px 100px; */
-    padding: 20px 1.5625%;
+    /* padding: 20px 1.5625%; */
     /* padding: 20px 20px;  */
     border: 10px solid var(--accColor);
     /* border-radius: 30px; */
@@ -38,7 +44,7 @@ header {
     height: auto;
     color: var(--secColor);
     background-color: var(--neuColor);
-    margin: auto;
+    /* padding: 20px 1.5625%; */
     text-align: center;
 
     display: block;
@@ -85,10 +91,9 @@ header h2 {
     background-color: var(--priColor);
     color: white;
     font-weight: bold;
-    border-right: 2px solid white;
+    /* border-right: 2px solid white; */
     border-bottom: var(--accColor);
 }
-
 #nav_menu ul li a.lastitem {
     border-right: none;
 }
