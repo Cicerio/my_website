@@ -14,7 +14,10 @@
     /* background-image: url("../images/Pool-Water-Texture.jpg"); */
 
 }
-
+@font-face {
+    font-family: Caveat;
+    src: url(../Caveat-VariableFont_wght.ttf);
+}
 body {
     display: flex;
     flex-direction: column;
@@ -80,6 +83,7 @@ header h2 {
 
 #nav_menu ul li {
     flex-basis: 25%;
+    
 }
 
 #nav_menu ul li a {
@@ -117,6 +121,7 @@ main {
 
 main h2 {
     text-align: center;
+    font-family:Caveat;
 }
 
 /* styles for the homepage gallery */
@@ -170,7 +175,10 @@ footer {
     padding: 10px;
     border-top: 2px solid var(--accColor);
 }
-
+footer a {
+    text-decoration: none;
+    color:var(--accColor);
+}
 @media only screen and (width <=475px) {
     #mobile_menu {
         display: block;
