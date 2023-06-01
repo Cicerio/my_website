@@ -1,0 +1,70 @@
+
+>>>>>>Hassan Sherafatmand (He/Him)
+Monday May 29 at 3:47pm
+Ralph, I liked the them of your web page especially about page.  I think the color that you picked about your content makes it more interesting. 
+I don't know exactly what plan you have, but I clicked to the first img in your landing page it open another page, 
+but for the second img, does not have the iteration. I assume that you are working on that. 
+
+Thank you so much for your hard work.
+
+>>>>>>Robert Troumbley
+Robert Troumbley
+Tuesday May 30 at 8:04pm
+Hi Ralph,
+
+I have had the pleasure of reviewing your website, and I must say, it is a captivating display of your photography work. 
+Here, I will share some aspects that I found particularly enjoyable,
+ as well as a few suggestions that might enhance the user experience based on my understanding of Chapter 16 and the responsiveness of the site across different screen sizes.
+
+Areas of Appreciation:
+
+Color Usage: The utilization of multiple colors, especially in the outlines, adds a dynamic and vibrant touch to your webpage. 
+It ensures that your website stands out and keeps the viewers engaged.
+
+Font Selection: I commend your creative use of different font types. 
+This adds an intriguing layer to the overall design, ensuring that the text is as engaging as the visuals.
+
+Areas for Improvement:
+
+Website Alignment: I noticed a shift of the webpage towards the left on my screen, which might result in a suboptimal viewing experience. 
+This issue appears to persist across all pages, suggesting a potential problem within the Style.css sheet related to center alignment of the body. 
+However at smaller widths such as mobile it held up.
+Capture-1.PNG
+Search Page Menu: The menu seems to disappear on the search page when viewed on a mobile device. This could affect the user's ability to navigate through your website, 
+especially those accessing it from their mobile devices. 
+search page mobleCapture.PNG
+Header Image: The pictures you have showcased are visually stunning. You could consider using a thin, landscape photograph as a header image to create a visually pleasing welcome to your site. 
+Also, don't forget to link up all the pages with the art, I know you only had one as an example.
+Congrats through! These small improvements could enhance the website's usability and make it even more appealing to the intended users, 
+namely landscape/nature enthusiasts and fellow photographers.
+
+Keep up the great work!
+
+>>>>>>Dean Perkins
+Dean Perkins
+Wednesday May 31 at 2:08pm
+The colors for your website were well thought out. You chose a very good theme for your web design and the photographs are great!
+
+There are a few adjustments I would make to your site. The first one being your navigation menu. It changes positions when you go to different websites. 
+So the first action may be to decide what you want to do with <p class = "desc">. 
+After you decide what to do, you should still address the nav bar jumping when going to the about page. 
+I saw you added a header {padding:20px;} to combat this, but that's not solving the problem. 
+The problem is that, for some reason, the about page is the only one inheriting * { margin: 0;}. 
+When I removed that format, I was able to remove the header { padding :20px 0} and the navs were lining up.
+
+Looking a bit further, you have 2 calls to the main element. I think you can put display : flex ;  in line 13.
+image.png
+
+On your about page, there is just a little clipping with img5 going over the nav menu. I looked a bit further and you may consider setting the height of the flex box. 
+There is also a typo on your about page. 
+
+When I look at the body code, there seems to be quite a bit that can be removed. I looked at each page and saw that the margins and padding that were striked through, 
+didn't seem to be used anywhere else. They may be commented out, but I can't really tell for sure.
+image.png
+
+On your search page, you also have your nav menu in the <header> tag.
+
+My last critique is your media query. When I force the website to mobile, you have :root {height: 350%;} on line 212, 
+but that line actually stretches your mobile out to have a lot more than needed.
+
+I still enjoyed my visit to your web page!
