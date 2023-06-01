@@ -2,6 +2,10 @@ main img{
     overflow: contain;
     max-width: 100%;
     width: 100%;
+    
+}
+main .gallery{
+    display: flex !important;
 }
 @media only screen and (width <700px) {
     header h1{
