@@ -13,5 +13,14 @@ for (let i = 0; i < images.length; i++) {
   const img = document.createElement("img");
   img.src = "photos/" + images[i];
   img.alt = "Gallery Image " + (i + 1);
-  gallery.appendChild(img);
+  // gallery.appendChild(img);
+
+  const a = document.createElement("a");
+  // a.innerText = "Image " + i;
+  a.href = "photos/" + images[i];
+  a.target = "_blank";
+  a.appendChild(img);
+  gallery.appendChild(a);
+  // gallery.appendChild(document.createElement("br"))
+  
 }
