@@ -1,3 +1,6 @@
+html{
+  background-size: 100% auto !important;
+}
 .gallery {
     display: flex;
     flex-wrap: wrap;

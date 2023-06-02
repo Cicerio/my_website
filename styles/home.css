@@ -1,13 +1,4 @@
 /* styles for the main */
-main{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-}
-main h2{
-    text-align: center;
-}
 .homeGallery{
     grid-area: sect;
     display:grid;

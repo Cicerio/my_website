@@ -4,6 +4,7 @@ Monday May 29 at 3:47pm
 Ralph, I liked the them of your web page especially about page.  I think the color that you picked about your content makes it more interesting. 
 I don't know exactly what plan you have, but I clicked to the first img in your landing page it open another page, 
 but for the second img, does not have the iteration. I assume that you are working on that. 
+Ralph -> DONE, modified gallery.js, gallery.html and index.html for image clicking. Also watermarked my photos.
 
 Thank you so much for your hard work.
 
@@ -29,9 +30,13 @@ Areas for Improvement:
 Website Alignment: I noticed a shift of the webpage towards the left on my screen, which might result in a suboptimal viewing experience. 
 This issue appears to persist across all pages, suggesting a potential problem within the Style.css sheet related to center alignment of the body. 
 However at smaller widths such as mobile it held up.
+RALPH L ROBINSON -> DONE, fixed Styles.css
+
 Capture-1.PNG
 Search Page Menu: The menu seems to disappear on the search page when viewed on a mobile device. This could affect the user's ability to navigate through your website, 
 especially those accessing it from their mobile devices. 
+RALPH L ROBINSON -> Done! Needed to put nav mobile_menue in Search.html.
+
 search page mobleCapture.PNG
 Header Image: The pictures you have showcased are visually stunning. You could consider using a thin, landscape photograph as a header image to create a visually pleasing welcome to your site. 
 Also, don't forget to link up all the pages with the art, I know you only had one as an example.
