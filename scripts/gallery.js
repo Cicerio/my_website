@@ -15,6 +15,8 @@ for (let i = 0; i < images.length; i++) {
   img.alt = "Gallery Image " + (i + 1);
   // gallery.appendChild(img);
 
+
+  // TO RESPOND TO CRITIQUE #1
   const a = document.createElement("a");
   // a.innerText = "Image " + i;
   a.href = "photos/" + images[i];
