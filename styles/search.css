@@ -1,44 +1,7 @@
 html{
-  background-size: 100% auto !important;
+  display:flex;
+  justify-content: center;
 }
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .gallery-item {
-    position: relative;
-    margin: 10px;
-  }
-  
-  .gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .overlay h3 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .gallery-item:hover .overlay {
-    opacity: 1;
-  }
+main{
+  height: 80%;
+}

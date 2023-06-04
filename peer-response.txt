@@ -52,6 +52,7 @@ The colors for your website were well thought out. You chose a very good theme f
 
 There are a few adjustments I would make to your site. The first one being your navigation menu. It changes positions when you go to different websites. 
 So the first action may be to decide what you want to do with <p class = "desc">. 
+>>>> DONE - added p.desc to all pages - Ralph L Robinson
 After you decide what to do, you should still address the nav bar jumping when going to the about page. 
 I saw you added a header {padding:20px;} to combat this, but that's not solving the problem. 
 The problem is that, for some reason, the about page is the only one inheriting * { margin: 0;}. 
@@ -65,6 +66,7 @@ There is also a typo on your about page.
 
 When I look at the body code, there seems to be quite a bit that can be removed. I looked at each page and saw that the margins and padding that were striked through, 
 didn't seem to be used anywhere else. They may be commented out, but I can't really tell for sure.
+>>> DONE - deleted overuse of comments -  Ralph L Robinson
 image.png
 
 On your search page, you also have your nav menu in the <header> tag.

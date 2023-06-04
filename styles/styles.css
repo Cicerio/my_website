@@ -19,17 +19,15 @@ html{
 body {
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    justify-self: center;
+    /* justify-items: center; */
+    /* justify-self: center; */
     font-size: 100%;
     color: var(--secColor);
     background-color: var(--neuColor);
-
     width: 80%;
     max-width: 1280px;
     min-height: 80%;
     margin: 50px auto;
-
     border: 10px solid var(--accColor);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-y: auto;
