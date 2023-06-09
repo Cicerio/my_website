@@ -1,53 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parrot Facts</title>
+  <link rel="icon" type="image/x-icon" href="favicons/parrotfavicon.ico">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/parrot.css">
+  <!-- Link for SlickNav Plugin -->
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script type="text/javascript"> $(document).ready(function () {
+      $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+    }); 
+  </script>
+  <!-- FontAwesome script -->
+  <script src="https://kit.fontawesome.com/ff630d5122.js" crossorigin="anonymous"></script>
+  <title>Parrots!</title>
 </head>
+
 <body>
   <header>
-    <h1>Parrot Facts</h1>
+    <h1>Parrot Facts!</h1>
   </header>
+  <!-- Navigation page, will contain more as pages are built -->
+  <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="parrotfacts.html">Birb</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
   <main>
     <section>
       <h2>About Parrots</h2>
-      <p>Parrots are intelligent and colorful birds that belong to the family Psittacidae. They are known for their ability to mimic human speech and their vibrant plumage. Here are a few interesting facts about parrots:</p>
-      <ul>
-        <li>Parrots have strong beaks that they use for eating, climbing, and exploring.</li>
-        <li>They can live for several decades, with some parrot species living up to 80 years or more.</li>
-        <li>Parrots are social creatures and often form strong bonds with their owners.</li>
-        <li>They come in a variety of sizes, ranging from small parakeets to large macaws.</li>
-        <li>Parrots are native to tropical and subtropical regions around the world.</li>
-      </ul>
+      <p>Parrots are intelligent and colorful birds that belong to the family Psittacidae. They are known for their
+        ability to mimic human speech and their vibrant plumage. Here are a few interesting facts about parrots:</p>
+      <aside class="subsect1">
+        <ul>
+          <li>Parrots have strong beaks that they use for eating, climbing, and exploring.</li>
+          <li>They can live for several decades, with some parrot species living up to 80 years or more.</li>
+          <li>Parrots are social creatures and often form strong bonds with their owners.</li>
+          <li>They come in a variety of sizes, ranging from small parakeets to large macaws.</li>
+          <li>Parrots are native to tropical and subtropical regions around the world.</li>
+        </ul>
+        <figure><img src="images/inFlight.jpg" alt="Flying red macaw"></figure>
+      </aside>
     </section>
     <section>
       <h2>Parrot Species</h2>
-      <p>There are numerous species of parrots, each with its own unique characteristics. Here are a few popular parrot species:</p>
-      <ul>
-        <li>African Grey Parrot</li>
-        <li>Scarlet Macaw</li>
-        <li>Cockatiel</li>
-        <li>Budgerigar (Budgie)</li>
-        <li>Amazon Parrot</li>
-      </ul>
+      <p>There are numerous species of parrots, each with its own unique characteristics. Here are a few popular parrot
+        species:</p>
+      <aside class="subsect2">
+        <ul>
+          <li>African Grey Parrot</li>
+          <li>Scarlet Macaw</li>
+          <li>Cockatiel</li>
+          <li>Budgerigar (Budgie)</li>
+          <li>Amazon Parrot</li>
+          <li>Parakeet</li>
+          <li>Lovebird</li>
+        </ul>
+        <div class="subsect2-img">
+          <figure><img src="images/greenParrot.jpg" alt="Orange-chinned Parakeet">
+            <figcaption>Orange-chinned Parakeet</figcaption>
+          </figure>
+          <figure><img src="images/peachfacedLovebird.jpg" alt="Peach-faced Lovebirds">
+            <figcaption>Peach-faced Lovebirds</figcaption>
+          </figure>
+        </div>
+      </aside>
       <p>Each species has its own distinct colors, behaviors, and vocalizations.</p>
     </section>
     <section>
       <h2>Parrot Care</h2>
       <p>Proper care is essential for keeping a pet parrot happy and healthy. Here are a few tips for parrot care:</p>
-      <ul>
-        <li>Provide a spacious cage with plenty of room for the parrot to move and stretch its wings.</li>
-        <li>Offer a balanced diet that includes fresh fruits, vegetables, and high-quality parrot pellets or seeds.</li>
-        <li>Ensure regular social interaction and mental stimulation through playtime and training.</li>
-        <li>Maintain a clean environment by regularly cleaning the cage and providing fresh water.</li>
-        <li>Regular veterinary check-ups are important to monitor the parrot's health.</li>
-      </ul>
+      <aside class="subsect3">
+        <ul>
+          <li>Provide a spacious cage with plenty of room for the parrot to move and stretch its wings.</li>
+          <li>Offer a balanced diet that includes fresh fruits, vegetables, and high-quality parrot pellets or seeds.
+          </li>
+          <li>Ensure regular social interaction and mental stimulation through playtime and training.</li>
+          <li>Maintain a clean environment by regularly cleaning the cage and providing fresh water.</li>
+          <li>Regular veterinary check-ups are important to monitor the parrot's health.</li>
+        </ul>
+        <figure><img src="images/Companion-Budgie.jpg" alt="Companion Budgie">
+        <figcaption>Companion Budgie</figcaption></figure>
+      </aside>
+    </section>
+    <section>
+      <h2>Parrot Videos</h2>
+      <p>an example of a parrot, specifically Gumi the chattering lory</p>
+      <p class="source">Courtesy of the channel <a src="https://www.youtube.com/@HideakiUtsumi">Hideaki Utsumi</a></p>
+      <aside class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ewf-8rx9_uQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-DVmNrX8dZU" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </aside>
     </section>
   </main>
   <footer>
     <p>&copy; 2023 Parrot Facts</p>
   </footer>
 </body>
+
 </html>
