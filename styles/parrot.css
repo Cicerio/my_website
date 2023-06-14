@@ -26,6 +26,9 @@ img{
     /* width: 400px; */
     height: 250px;
 }
+aside.videos{
+    padding: 10px;
+}
 @media screen and (width<=475px){
     header h1{
         font-size: 2em;

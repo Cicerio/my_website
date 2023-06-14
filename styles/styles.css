@@ -155,6 +155,10 @@ section {
     text-align: center;
     object-position: center;
 }
+iframe{
+    margin: 20px 15px;
+    border: 2px solid var(--accColor);
+}
 
 /* styles for the footer */
 footer {
