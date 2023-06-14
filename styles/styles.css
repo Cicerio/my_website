@@ -1,4 +1,5 @@
 :root {
+    /* color palette */
     --priColor: #726EFF;
     --secColor: #5AFFE7;
     --accColor: #08C6AB;
@@ -11,6 +12,7 @@
 html{
     display:grid;
     justify-content: center;
+    min-height: 100vh;
 }
 @font-face {
     font-family: Caveat;
@@ -19,18 +21,17 @@ html{
 body {
     display: flex;
     flex-direction: column;
-    /* justify-items: center; */
-    /* justify-self: center; */
     font-size: 100%;
     color: var(--secColor);
     background-color: var(--neuColor);
     width: 80%;
     max-width: 1280px;
-    /* min-height: 80%; */
+
     margin: 50px auto;
     border: 10px solid var(--accColor);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    overflow-y: c;
+    overflow-y:contain;
+    height: fit-content;
 }
 
 /* styles for the header */
@@ -157,15 +158,21 @@ section {
 
 /* styles for the footer */
 footer {
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
     font-style: italic;
     clear: both;
-
+    height:100px;
     padding: 10px;
     border-top: 2px solid var(--accColor);
 }
 footer a {
     text-decoration: none;
     color:var(--accColor);
+}
+footer a:hover{
+    color:var(--secColor)
 }
 @media only screen and (width <=475px) {
     #mobile_menu {
