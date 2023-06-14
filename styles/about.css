@@ -68,7 +68,7 @@ aside img {
         flex-direction: row;
         width: 50%;
         justify-items: space-evenly;
-        justify-content: start;
+        /* justify-content: start; */
     }
 
     aside.aboutImg img {
