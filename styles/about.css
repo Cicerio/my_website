@@ -3,11 +3,6 @@
    height: 100vh;
    overflow-y: visible;
 }
-body{
-    overflow: visible;
-    align-content: stretch;
-    height: fit-content;
-}
 main {
     flex-direction: row;
     flex-wrap: nowrap !important;

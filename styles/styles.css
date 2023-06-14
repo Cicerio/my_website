@@ -31,9 +31,9 @@ body {
     border: 10px solid var(--accColor);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-y:contain;
+    height: -moz-fit-content; /* for Firefox */
     height: fit-content;
 }
-
 /* styles for the header */
 header {
     font-size: 1em;
